@@ -1,4 +1,4 @@
-import config from "./config.js";
+import config from "../config/config.js";
 
 const { TIMER_CONTROL_CLASS, TIMER_MINUTES_CLASS, TIMER_SECONDS_CLASS } = config
 class Timer {

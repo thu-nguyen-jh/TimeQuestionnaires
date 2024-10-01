@@ -1,5 +1,5 @@
 import { QuestionType } from "./Question.js";
-import config from "./config.js";
+import config from "../config/config.js";
 
 const {
     ANSWER_MULTI_CLASS,

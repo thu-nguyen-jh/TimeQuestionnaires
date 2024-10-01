@@ -1,4 +1,4 @@
-import { QuestionType } from "./Question.js";
+import { QuestionType } from "../components/Question.js";
 
 export const questionData = [{
         question: "What is the capital of France?",

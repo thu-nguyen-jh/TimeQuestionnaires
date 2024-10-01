@@ -1,6 +1,6 @@
-import { questionData } from "./data.js";
-import { QuestionType, Question } from "./Question.js";
-import ControlManagement from "./ControlManagement.js";
+import { questionData } from "./config/data.js";
+import { QuestionType, Question } from "./components/Question.js";
+import ControlManagement from "./components/ControlManagement.js";
 
 const controlManagement = new ControlManagement(10);
 

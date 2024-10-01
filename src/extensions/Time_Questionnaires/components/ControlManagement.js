@@ -1,6 +1,6 @@
 import Timer from "./Timer.js";
 import { ShowQuestionState, EndControlState } from "./ControlState.js";
-import config from "./config.js";
+import config from "../config/config.js";
 
 const { TIMER_CLASS, MY_SCORE_CLASS } = config
 
