@@ -2,14 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>Time Questionnaires</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <script src="script.js"></script>
+    <div class="container">
+        <div class="time-score">
+            <div class="timer"></div>
+            <div class="score">
+                <p>Your score</p>
+                <p class="my-score">0</p>
+            </div>
+        </div>
+        <div class="questionnaires">
+            <h1 class="question"></h1>
+            <div class="answer multi"></div>
+            <div class="answer check"></div>
+            <div class="answer text">
+                <input type="text" placeholder="Type your answer here" />
+            </div>
+            <button class="submit button hidden">Submit</button>
+        </div>
+        <div class="result hidden">
+            <div class="fail-dialog">
+                <h1>Time up!</h1>
+                <br />
+                <p>You have not completed your questionnaires</p>
+            </div>
+            <div class="result-dialog">
+                <h1>Congratulation!</h1>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
 </body>
 
 </html>
