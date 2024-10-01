@@ -110,7 +110,6 @@ class ShowQuestionState {
     };
 
     handleSubmit = () => {
-        let answer;
         const answerMethods = {
             [QuestionType.MULTIPLE_CHOICE]: this.getSelectedRadioValue,
             [QuestionType.TEXT_RESPONSE]: this.getTextInputValue,
@@ -120,9 +119,8 @@ class ShowQuestionState {
         const answerFunc = answerMethods[this.question.type];
 
         if (answerFunc) {
-            answer = answerFunc();
-            if (this.isValidAnswer(answer)) {
-                this.selectAnswer(answer);
+            if (this.isValidAnswer(answerFunc())) {
+                this.selectAnswer(answerFunc());
             }
         }
     };

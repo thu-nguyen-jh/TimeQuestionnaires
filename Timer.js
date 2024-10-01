@@ -42,6 +42,7 @@ class Timer {
             if (this.interval === null) {
                 this.start();
             }
+            if (this.remainingSeconds === 0) return;
         });
     }
 
@@ -58,7 +59,7 @@ class Timer {
 			isRunning ? "pause" : "play_arrow"
 		}</span>`;
         this.el.control.classList.toggle("timer__btn--stop", isRunning);
-        // this.el.control.classList.toggle("hidden", !isRunning);
+        this.el.control.classList.toggle("timer-control-none", this.remainingSeconds === 0);
     }
 
     start() {

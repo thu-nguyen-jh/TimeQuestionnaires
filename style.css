@@ -142,3 +142,6 @@ body {
 .result.hidden {
 	display: none;
 }
+.timer-control-none {
+	cursor: not-allowed
+}
